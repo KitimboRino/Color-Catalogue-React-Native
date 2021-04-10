@@ -11,14 +11,14 @@ import {
 
 // Exports
 export default function ColorForm({ onNewColor = f => f }) {
-  
+
   // Hooks
   const [inputValue, setValue] = useState('');
   const input = useRef();
-  
+
   return (
     <View style={styles.container}>
-      
+
       <TextInput
         ref={input}
         style={styles.txtInput}
@@ -43,9 +43,10 @@ export default function ColorForm({ onNewColor = f => f }) {
 // Styles
 const styles = StyleSheet.create({
   container: {
-    marginTop: 40,
+    // marginTop: 40,
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: 'white'
   },
 
   txtInput: {
